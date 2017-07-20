@@ -78,6 +78,16 @@ const sidePanel = `{
     display: none !important;
 }`
 
+
+// Left side panel
+const leftSideCells = `{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}`
+const leftSideSelectedCell = `{
+    transition: all .1s ease-in-out;
+}`
+
 $(function () {
     console.log('%cG%cM%cA%cI%cL%c\tSit tight while we make things pretty...',
         'color: #4285f4',
@@ -110,4 +120,8 @@ $(function () {
     document.styleSheets[0].insertRule(`h3.iw .gD ${fromHeader}`, 0)
     document.styleSheets[0].insertRule(`.hx .gH ${fromHeader}`, 0)
     document.styleSheets[0].insertRule(`.y3 ${sidePanel}`, 0)
+
+    // Left side panel
+    document.styleSheets[0].insertRule(`.TN ${leftSideCells}`, 0)
+    document.styleSheets[0].insertRule(`.NQ, .aij ${leftSideSelectedCell}`, 0)
 })
