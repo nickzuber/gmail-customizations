@@ -66,7 +66,9 @@ const unreadEmailLeftSide = `{
   margin-top: -32px;
 }`
 const veryLeftSideCell = `{
-    background: transparent !important;
+    background: #fff !important;
+    border-bottom: 1px solid #fff !important;
+    border-top: 1px double #fff !important;
 }`
 
 
