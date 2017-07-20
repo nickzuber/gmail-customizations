@@ -1,4 +1,4 @@
-# Modern Gmail
+# <img width="40px" src="icons/icon128.png" /> Modern Gmail
 
 Chrome plugin for making gmail a little prettier. Mostly just styling tweaks. 
 
