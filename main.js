@@ -59,11 +59,11 @@ const unreadEmail = `{
 const unreadEmailLeftSide = `{
   content: "";
   height: 79px;
-  width: 3px;
+  width: 4px;
   position: absolute;
-  background: #4684ec;
+  background: #d54937;
   left: 0;
-  margin-top: -30px;
+  margin-top: -32px;
 }`
 
 // Styling within emails
