@@ -65,6 +65,10 @@ const unreadEmailLeftSide = `{
   left: 0;
   margin-top: -32px;
 }`
+const veryLeftSideCell = `{
+    background: transparent !important;
+}`
+
 
 // Styling within emails
 const header = `{
@@ -94,6 +98,7 @@ const sidePanel = `{
 const leftSideCells = `{
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    font-family: ${SAN_SERIF_FONT} !important;
 }`
 const leftSideSelectedCell = `{
     transition: all .1s ease-in-out;
@@ -126,6 +131,9 @@ $(function () {
     document.styleSheets[0].insertRule(`.zE ${unreadEmail}`, 0)
     document.styleSheets[0].insertRule(`.zE > .apo-x3.xY::after ${unreadEmailLeftSide}`, 0)
 
+    document.styleSheets[0].insertRule(`.NQ, .aij ${leftSideSelectedCell}`, 0)
+    document.styleSheets[0].insertRule(`.PF.PE ${veryLeftSideCell}`, 0)
+    
     // Emails
     document.styleSheets[0].insertRule(`.hP ${header}`, 0)
     document.styleSheets[0].insertRule(`.hx .ii ${paragraph}`, 0)
@@ -137,5 +145,4 @@ $(function () {
 
     // Left side panel
     document.styleSheets[0].insertRule(`.TN ${leftSideCells}`, 0)
-    document.styleSheets[0].insertRule(`.NQ, .aij ${leftSideSelectedCell}`, 0)
 })
