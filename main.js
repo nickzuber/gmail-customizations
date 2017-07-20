@@ -53,7 +53,18 @@ const labels = `{
     font-family: ${SAN_SERIF_FONT} !important;
     font-size: 95% !important;
 }`
-
+const unreadEmail = `{
+    background: rgba(159, 159, 159, 0.05) !important;
+}`
+const unreadEmailLeftSide = `{
+  content: "";
+  height: 79px;
+  width: 3px;
+  position: absolute;
+  background: #4684ec;
+  left: 0;
+  margin-top: -30px;
+}`
 
 // Styling within emails
 const header = `{
@@ -111,6 +122,9 @@ $(function () {
 
     document.styleSheets[0].insertRule(`.apw, .apC ${standardEmailCell}`, 0)
     document.styleSheets[0].insertRule(`.as .at ${labels}`, 0)
+
+    document.styleSheets[0].insertRule(`.zE ${unreadEmail}`, 0)
+    document.styleSheets[0].insertRule(`.zE > .apo-x3.xY::after ${unreadEmailLeftSide}`, 0)
 
     // Emails
     document.styleSheets[0].insertRule(`.hP ${header}`, 0)
