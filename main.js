@@ -46,6 +46,13 @@ const emailTopText = `{
     font-family: ${SAN_SERIF_FONT} !important;
     font-size: 70% !important;
 }`
+const labels = `{
+    overflow: hidden !important;
+    border-radius: 10px !important;
+    padding: 0 2px !important;
+    font-family: ${SAN_SERIF_FONT} !important;
+    font-size: 95% !important;
+}`
 
 
 // Styling within emails
@@ -62,6 +69,13 @@ const paragraph = `{
     font-size: 15px !important;
     color: #363738 !important;
     line-height: 24px !important;
+}`
+const fromHeader = `{
+    font-family: ${SAN_SERIF_FONT} !important;
+    color: #363738 !important;
+}`
+const sidePanel = `{
+    display: none !important;
 }`
 
 $(function () {
@@ -86,9 +100,15 @@ $(function () {
     document.styleSheets[0].insertRule(`.xY.apy, .xY.apt, .xY.apx ${emailTopText}`, 0)
 
     document.styleSheets[0].insertRule(`.apw, .apC ${standardEmailCell}`, 0)
+    document.styleSheets[0].insertRule(`.as .at ${labels}`, 0)
 
 
     // Emails
     document.styleSheets[0].insertRule(`.hP ${header}`, 0)
     document.styleSheets[0].insertRule(`.hx .ii ${paragraph}`, 0)
+
+    document.styleSheets[0].insertRule(`h3.iw ${fromHeader}`, 0)
+    document.styleSheets[0].insertRule(`h3.iw .gD ${fromHeader}`, 0)
+    document.styleSheets[0].insertRule(`.hx .gH ${fromHeader}`, 0)
+    document.styleSheets[0].insertRule(`.y3 ${sidePanel}`, 0)
 })
