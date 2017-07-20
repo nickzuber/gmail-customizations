@@ -7,7 +7,7 @@ function loadCustomFont () {
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('type', 'text/css');
-    // Sniffed from Medium
+    // Sniffed from Medium, don't sue me pls I respect the font
     link.setAttribute('href', 'https://cdn-static-1.medium.com/_/fp/css/fonts-base.by5Oi_VbnwEIvhnWIsuUjA.css')
     document.head.appendChild(link);
 }
@@ -79,7 +79,7 @@ const sidePanel = `{
 }`
 
 $(function () {
-    console.log('%cG%cm%ca%ci%cl%c\tSit tight while we make things pretty...',
+    console.log('%cG%cM%cA%cI%cL%c\tSit tight while we make things pretty...',
         'color: #4285f4',
         'color: #ea4335',
         'color: #fbbc05',
@@ -101,7 +101,6 @@ $(function () {
 
     document.styleSheets[0].insertRule(`.apw, .apC ${standardEmailCell}`, 0)
     document.styleSheets[0].insertRule(`.as .at ${labels}`, 0)
-
 
     // Emails
     document.styleSheets[0].insertRule(`.hP ${header}`, 0)
