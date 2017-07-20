@@ -1,5 +1,7 @@
 
-<img align="center" src="icons/original.png" />
+<p align="left">
+    <img width="200px" src="icons/original.png" />
+</p>
 
 # Modern Gmail
 
