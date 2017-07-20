@@ -18,6 +18,8 @@ Go to
 chrome://extensions/
 ```
 
+Turn on `Developer mode`
+
 Press `Load unpacked extention...`
 
 Load `modern-gmail` directory that you just cloned
