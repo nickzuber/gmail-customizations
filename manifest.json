@@ -1,0 +1,21 @@
+{
+    "name": "Gmail Customizations",
+    "description": "Making Gmail a little prettier.",
+    "version": "0.1",
+    "background": {
+        "scripts": [ "jquery.js", "main.js" ]
+    },
+    "permissions": [
+        "tabs", "http://mail.google.com/*", "https://mail.google.com/*"
+    ],
+    "browser_action": {
+        "default_title": "Gmail Customizations"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "http://mail.google.com/*", "https://mail.google.com/*" ],
+            "js": [ "jquery.js", "main.js" ]
+        }
+    ],
+    "manifest_version": 2
+}
