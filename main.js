@@ -61,7 +61,7 @@ const unreadEmailLeftSide = `{
   height: 79px;
   width: 4px;
   position: absolute;
-  background: #d54937;
+  background: #4683eb;
   left: 0;
   margin-top: -32px;
 }`
