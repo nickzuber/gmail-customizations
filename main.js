@@ -70,6 +70,9 @@ const veryLeftSideCell = `{
     border-bottom: 1px solid #fff !important;
     border-top: 1px double #fff !important;
 }`
+const rightSideStar = `{
+    top: 13px !important;
+}`
 
 
 // Styling within emails
@@ -135,6 +138,8 @@ $(function () {
 
     document.styleSheets[0].insertRule(`.NQ, .aij ${leftSideSelectedCell}`, 0)
     document.styleSheets[0].insertRule(`.PF.PE ${veryLeftSideCell}`, 0)
+
+    document.styleSheets[0].insertRule(`td.apU .T-KT ${rightSideStar}`, 0)
     
     // Emails
     document.styleSheets[0].insertRule(`.hP ${header}`, 0)
