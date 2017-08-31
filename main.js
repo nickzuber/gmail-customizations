@@ -1,14 +1,15 @@
 'use strict';
 
 const SAN_SERIF_FONT = 'BlinkMacSystemFont,-apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif'
-const SERIF_FONT = 'medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif'
+const SERIF_FONT = 'Interface,medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif'
 
 function loadCustomFont () {
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('type', 'text/css');
     // Sniffed from Medium, don't sue me pls I respect the font
-    link.setAttribute('href', 'https://cdn-static-1.medium.com/_/fp/css/fonts-base.by5Oi_VbnwEIvhnWIsuUjA.css')
+    // link.setAttribute('href', 'https://cdn-static-1.medium.com/_/fp/css/fonts-base.by5Oi_VbnwEIvhnWIsuUjA.css')
+    link.setAttribute('href', 'https://rsms.me/interface/interface.css')
     document.head.appendChild(link);
 }
 
