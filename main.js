@@ -47,13 +47,13 @@ const emailTopText = `{
     font-family: ${SAN_SERIF_FONT} !important;
     font-size: 70% !important;
 }`
-const labels = `{
-    overflow: hidden !important;
-    border-radius: 10px !important;
-    padding: 0 2px !important;
-    font-family: ${SAN_SERIF_FONT} !important;
-    font-size: 95% !important;
-}`
+// const labels = `{
+//     overflow: hidden !important;
+//     border-radius: 10px !important;
+//     padding: 0 2px !important;
+//     font-family: ${SAN_SERIF_FONT} !important;
+//     font-size: 95% !important;
+// }`
 const unreadEmail = `{
     background: rgba(159, 159, 159, 0.05) !important;
 }`
@@ -71,9 +71,9 @@ const veryLeftSideCell = `{
     border-bottom: 1px solid #fff !important;
     border-top: 1px double #fff !important;
 }`
-const rightSideStar = `{
-    top: 13px !important;
-}`
+// const rightSideStar = `{
+//     top: 13px !important;
+// }`
 
 
 // Styling within emails
@@ -102,8 +102,8 @@ const sidePanel = `{
 
 // Left side panel
 const leftSideCells = `{
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    /* padding-top: 10px !important; */
+    /* padding-bottom: 10px !important; */
     font-family: ${SAN_SERIF_FONT} !important;
 }`
 const leftSideSelectedCell = `{
@@ -132,7 +132,7 @@ $(function () {
     document.styleSheets[0].insertRule(`.xY.apy, .xY.apt, .xY.apx ${emailTopText}`, 0)
 
     document.styleSheets[0].insertRule(`.apw, .apC ${standardEmailCell}`, 0)
-    document.styleSheets[0].insertRule(`.as .at ${labels}`, 0)
+    // document.styleSheets[0].insertRule(`.as .at ${labels}`, 0)
 
     document.styleSheets[0].insertRule(`.zE ${unreadEmail}`, 0)
     document.styleSheets[0].insertRule(`.zE > .apo-x3.xY::after ${unreadEmailLeftSide}`, 0)
@@ -140,11 +140,12 @@ $(function () {
     document.styleSheets[0].insertRule(`.NQ, .aij ${leftSideSelectedCell}`, 0)
     document.styleSheets[0].insertRule(`.PF.PE ${veryLeftSideCell}`, 0)
 
-    document.styleSheets[0].insertRule(`td.apU .T-KT ${rightSideStar}`, 0)
+    // document.styleSheets[0].insertRule(`td.apU .T-KT ${rightSideStar}`, 0)
     
     // Emails
     document.styleSheets[0].insertRule(`.hP ${header}`, 0)
-    document.styleSheets[0].insertRule(`.hx .ii ${paragraph}`, 0)
+    // document.styleSheets[0].insertRule(`.hx .ii ${paragraph}`, 0) // old
+    document.styleSheets[0].insertRule(`.a3s.aXjCH ${paragraph}`, 0)
 
     document.styleSheets[0].insertRule(`h3.iw ${fromHeader}`, 0)
     document.styleSheets[0].insertRule(`h3.iw .gD ${fromHeader}`, 0)
